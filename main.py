@@ -1,7 +1,8 @@
-def answer(*a):
-    if type(a[0][0]) != int:
-        return "ERROR"
-    if a[0][0] % 2 == 0:
-        return "HI"
+def foo(data):
+    if len(data) == 13:
+        data += '1337'
+    elif len(data) < 13:
+        buf = data[:]
+        data = 132
     else:
-        return "BYE"
+        data = "third path"
